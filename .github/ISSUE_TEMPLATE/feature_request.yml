@@ -1,0 +1,37 @@
+name: Feature request
+description: Suggest a capability or improvement based on a real need.
+title: "[Feature] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Focus on the problem and desired outcome. A proposed implementation is welcome but not required.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or opportunity
+      description: Who needs this and what is difficult today?
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+      description: What should become possible or easier?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Suggested approach
+      description: Optional idea, mockup, or user workflow.
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives and tradeoffs
+      description: Existing workarounds, constraints, and relevant options.
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: What would success look like?
+      description: A few observable outcomes or acceptance criteria, if known.

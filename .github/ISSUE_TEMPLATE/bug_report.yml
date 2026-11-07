@@ -1,0 +1,50 @@
+name: Bug report
+description: Report reproducible behavior that does not work as expected.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please check for an existing report and remove secrets, credentials, and private client information from any examples or logs.
+        Report security vulnerabilities privately rather than in public issues.
+  - type: textarea
+    id: observed
+    attributes:
+      label: What happened?
+      description: Explain the actual behavior and its impact.
+      placeholder: Describe the problem in plain language.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+      placeholder: Describe the expected outcome.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Include the smallest reliable reproduction. If you cannot reproduce it, explain when it occurs.
+      placeholder: |
+        1. Start from ...
+        2. Run or select ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      placeholder: Release, branch, or short SHA (if known)
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment and context
+      description: OS, browser, runtime, deployment context, or other relevant details.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Logs or screenshots
+      description: Optional evidence. Redact tokens, personal information, and client data first.

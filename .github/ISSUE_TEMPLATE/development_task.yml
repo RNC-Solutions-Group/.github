@@ -1,0 +1,44 @@
+name: Development task
+description: Define a scoped implementation, maintenance, or documentation work item.
+title: "[Task] "
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: What outcome must this task achieve, and why?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope and deliverables
+      description: Identify in-scope work, expected artifacts, and important exclusions.
+      placeholder: |
+        In scope:
+        - ...
+
+        Out of scope:
+        - ...
+    validations:
+      required: true
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Dependencies, constraints, and risks
+      description: Related issues, external decisions, compatibility, security, or rollout considerations.
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: List observable completion conditions, including failure paths when relevant.
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: Verification plan
+      description: Tests, review evidence, or manual checks needed before this can be closed.
